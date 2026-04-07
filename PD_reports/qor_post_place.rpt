@@ -1,0 +1,44 @@
+[icc2-lic Sun Apr  5 15:08:10 2026] Command 'report_qor' requires licenses
+[icc2-lic Sun Apr  5 15:08:10 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Apr  5 15:08:10 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Apr  5 15:08:10 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Apr  5 15:08:10 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Apr  5 15:08:11 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Apr  5 15:08:11 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Apr  5 15:08:11 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Apr  5 15:08:11 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Apr  5 15:08:11 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Apr  5 15:08:11 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Apr  5 15:08:11 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Apr  5 15:08:11 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Apr  5 15:08:11 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Apr  5 15:08:11 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Apr  5 15:08:11 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Apr  5 15:08:11 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Apr  5 15:08:11 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Apr  5 15:08:11 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : qor
+        -summary
+Design : pow2_3bit
+Version: W-2024.09
+Date   : Sun Apr  5 15:08:11 2026
+****************************************
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+func::nom          (Setup)             7.67           0.00              0
+Design             (Setup)             7.67           0.00              0
+
+func::nom          (Hold)             -0.09          -0.63              8
+Design             (Hold)             -0.09          -0.63              8
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                             96.83
+Cell Area (netlist and physical only):           96.83
+Nets with DRC Violations:        0
+1

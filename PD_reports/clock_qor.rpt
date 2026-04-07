@@ -1,0 +1,55 @@
+[icc2-lic Sun Apr  5 15:13:19 2026] Command 'report_clock_qor' requires licenses
+[icc2-lic Sun Apr  5 15:13:19 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Apr  5 15:13:19 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Apr  5 15:13:19 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Apr  5 15:13:19 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Apr  5 15:13:19 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Apr  5 15:13:19 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Apr  5 15:13:19 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Apr  5 15:13:19 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Apr  5 15:13:19 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Apr  5 15:13:19 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Apr  5 15:13:19 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Apr  5 15:13:19 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Apr  5 15:13:19 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Apr  5 15:13:19 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Apr  5 15:13:19 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Apr  5 15:13:19 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Apr  5 15:13:19 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Apr  5 15:13:19 2026] Check-out of alternate set of keys directly with queueing was successful
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+****************************************
+Report : clock qor
+        -type summary
+Design : pow2_3bit
+Version: W-2024.09
+Date   : Sun Apr  5 15:13:19 2026
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+==========================================
+==== Summary Reporting for Corner nom ====
+==========================================
+
+============================================================= Summary Table for Corner nom =============================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: func::nom
+clk                                     M,D        11      1        0      0.00      0.00      0.00      0.00         0         0     44.21
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                         11      1        0      0.00      0.00      0.00      0.00         0         0     44.21
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+1

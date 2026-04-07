@@ -1,0 +1,15 @@
+****************************************
+Report : congestion
+Design : pow2_3bit
+Version: W-2024.09
+Date   : Sun Apr  5 15:21:52 2026
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |       1 |     1 |       1  ( 0.51%) |       1
+H routing |       1 |     1 |       1  ( 1.01%) |       1
+V routing |       0 |     0 |       0  ( 0.00%) |       0
+
+1

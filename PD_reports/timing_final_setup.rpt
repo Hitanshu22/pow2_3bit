@@ -1,0 +1,707 @@
+[icc2-lic Sun Apr  5 15:21:52 2026] Command 'report_timing' requires licenses
+[icc2-lic Sun Apr  5 15:21:52 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Apr  5 15:21:52 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Apr  5 15:21:52 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Apr  5 15:21:52 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Apr  5 15:21:52 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Apr  5 15:21:52 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Apr  5 15:21:52 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Apr  5 15:21:52 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Apr  5 15:21:52 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Apr  5 15:21:52 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Apr  5 15:21:52 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Apr  5 15:21:52 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Apr  5 15:21:52 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Apr  5 15:21:52 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Apr  5 15:21:52 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Apr  5 15:21:52 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Apr  5 15:21:52 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Apr  5 15:21:52 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+        -input_pins
+Design : pow2_3bit
+Version: W-2024.09
+Date   : Sun Apr  5 15:21:52 2026
+****************************************
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: y_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 r
+  rst (in)                                         0.00      2.00 r
+  U22/A (INVX0_RVT)                                0.00      2.00 r
+  U22/Y (INVX0_RVT)                                0.03      2.03 f
+  U23/A1 (AND2X1_RVT)                              0.00      2.03 f
+  U23/Y (AND2X1_RVT)                               0.05      2.08 f
+  U25/A2 (AND3X1_RVT)                              0.00      2.08 f
+  U25/Y (AND3X1_RVT)                               0.04      2.12 f
+  copt_h_inst_694/A (DELLN1X2_RVT)                 0.00      2.12 f
+  copt_h_inst_694/Y (DELLN1X2_RVT)                 0.11      2.24 f
+  y_reg[1]/D (DFFX1_RVT)                           0.00      2.24 f
+  data arrival time                                          2.24
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  y_reg[1]/CLK (DFFX1_RVT)                         0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.02      9.78
+  data required time                                         9.78
+  ------------------------------------------------------------------------
+  data required time                                         9.78
+  data arrival time                                         -2.24
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.54
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: y_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 r
+  rst (in)                                         0.00      2.00 r
+  U22/A (INVX0_RVT)                                0.00      2.00 r
+  U22/Y (INVX0_RVT)                                0.03      2.03 f
+  U23/A1 (AND2X1_RVT)                              0.00      2.03 f
+  U23/Y (AND2X1_RVT)                               0.05      2.08 f
+  U27/A3 (AND3X1_RVT)                              0.00      2.08 f
+  U27/Y (AND3X1_RVT)                               0.04      2.12 f
+  copt_h_inst_698/A (DELLN1X2_RVT)                 0.00      2.12 f
+  copt_h_inst_698/Y (DELLN1X2_RVT)                 0.11      2.24 f
+  y_reg[3]/D (DFFX1_RVT)                           0.00      2.24 f
+  data arrival time                                          2.24
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  y_reg[3]/CLK (DFFX1_RVT)                         0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.02      9.78
+  data required time                                         9.78
+  ------------------------------------------------------------------------
+  data required time                                         9.78
+  data arrival time                                         -2.24
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.54
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: y_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 r
+  rst (in)                                         0.00      2.00 r
+  U22/A (INVX0_RVT)                                0.00      2.00 r
+  U22/Y (INVX0_RVT)                                0.03      2.03 f
+  U23/A1 (AND2X1_RVT)                              0.00      2.03 f
+  U23/Y (AND2X1_RVT)                               0.05      2.08 f
+  U26/A2 (AND3X1_RVT)                              0.00      2.08 f
+  U26/Y (AND3X1_RVT)                               0.04      2.12 f
+  copt_h_inst_690/A (DELLN1X2_RVT)                 0.00      2.12 f
+  copt_h_inst_690/Y (DELLN1X2_RVT)                 0.11      2.23 f
+  y_reg[2]/D (DFFX1_RVT)                           0.00      2.23 f
+  data arrival time                                          2.23
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  y_reg[2]/CLK (DFFX1_RVT)                         0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.02      9.78
+  data required time                                         9.78
+  ------------------------------------------------------------------------
+  data required time                                         9.78
+  data arrival time                                         -2.23
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.54
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: y_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 r
+  rst (in)                                         0.00      2.00 r
+  U22/A (INVX0_RVT)                                0.00      2.00 r
+  U22/Y (INVX0_RVT)                                0.03      2.03 f
+  U23/A1 (AND2X1_RVT)                              0.00      2.03 f
+  U23/Y (AND2X1_RVT)                               0.05      2.08 f
+  U24/A1 (AND3X1_RVT)                              0.00      2.08 f
+  U24/Y (AND3X1_RVT)                               0.04      2.12 f
+  copt_h_inst_692/A (DELLN1X2_RVT)                 0.00      2.12 f
+  copt_h_inst_692/Y (DELLN1X2_RVT)                 0.11      2.23 f
+  y_reg[0]/D (DFFX1_RVT)                           0.00      2.23 f
+  data arrival time                                          2.23
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  y_reg[0]/CLK (DFFX1_RVT)                         0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.02      9.78
+  data required time                                         9.78
+  ------------------------------------------------------------------------
+  data required time                                         9.78
+  data arrival time                                         -2.23
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.55
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: x_reg_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 f
+  rst (in)                                         0.00      2.00 f
+  x_reg_reg[0]/SETB (DFFSSRX1_RVT)                 0.00      2.00 f
+  data arrival time                                          2.00
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  x_reg_reg[0]/CLK (DFFSSRX1_RVT)                  0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.25      9.55
+  data required time                                         9.55
+  ------------------------------------------------------------------------
+  data required time                                         9.55
+  data arrival time                                         -2.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.55
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: x_reg_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 f
+  rst (in)                                         0.00      2.00 f
+  x_reg_reg[1]/SETB (DFFSSRX1_RVT)                 0.00      2.00 f
+  data arrival time                                          2.00
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  x_reg_reg[1]/CLK (DFFSSRX1_RVT)                  0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.25      9.55
+  data required time                                         9.55
+  ------------------------------------------------------------------------
+  data required time                                         9.55
+  data arrival time                                         -2.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.55
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: x_reg_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 f
+  rst (in)                                         0.00      2.00 f
+  x_reg_reg[2]/SETB (DFFSSRX1_RVT)                 0.00      2.00 f
+  data arrival time                                          2.00
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  x_reg_reg[2]/CLK (DFFSSRX1_RVT)                  0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.25      9.55
+  data required time                                         9.55
+  ------------------------------------------------------------------------
+  data required time                                         9.55
+  data arrival time                                         -2.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.55
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: y_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 r
+  rst (in)                                         0.00      2.00 r
+  U22/A (INVX0_RVT)                                0.00      2.00 r
+  U22/Y (INVX0_RVT)                                0.03      2.03 f
+  U28/A4 (AND4X1_RVT)                              0.00      2.03 f
+  U28/Y (AND4X1_RVT)                               0.06      2.09 f
+  copt_h_inst_696/A (DELLN1X2_RVT)                 0.00      2.09 f
+  copt_h_inst_696/Y (DELLN1X2_RVT)                 0.12      2.21 f
+  y_reg[4]/D (DFFX1_RVT)                           0.00      2.21 f
+  data arrival time                                          2.21
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  y_reg[4]/CLK (DFFX1_RVT)                         0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.02      9.78
+  data required time                                         9.78
+  ------------------------------------------------------------------------
+  data required time                                         9.78
+  data arrival time                                         -2.21
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.57
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: y_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 r
+  rst (in)                                         0.00      2.00 r
+  U22/A (INVX0_RVT)                                0.00      2.00 r
+  U22/Y (INVX0_RVT)                                0.03      2.03 f
+  U31/A4 (AND4X1_RVT)                              0.00      2.03 f
+  U31/Y (AND4X1_RVT)                               0.06      2.09 f
+  copt_h_inst_693/A (DELLN1X2_RVT)                 0.00      2.09 f
+  copt_h_inst_693/Y (DELLN1X2_RVT)                 0.12      2.21 f
+  y_reg[7]/D (DFFX1_RVT)                           0.00      2.21 f
+  data arrival time                                          2.21
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  y_reg[7]/CLK (DFFX1_RVT)                         0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.02      9.78
+  data required time                                         9.78
+  ------------------------------------------------------------------------
+  data required time                                         9.78
+  data arrival time                                         -2.21
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.57
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: y_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 r
+  rst (in)                                         0.00      2.00 r
+  U22/A (INVX0_RVT)                                0.00      2.00 r
+  U22/Y (INVX0_RVT)                                0.03      2.03 f
+  U30/A4 (AND4X1_RVT)                              0.00      2.03 f
+  U30/Y (AND4X1_RVT)                               0.06      2.09 f
+  copt_h_inst_695/A (DELLN1X2_RVT)                 0.00      2.09 f
+  copt_h_inst_695/Y (DELLN1X2_RVT)                 0.12      2.21 f
+  y_reg[6]/D (DFFX1_RVT)                           0.00      2.21 f
+  data arrival time                                          2.21
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  y_reg[6]/CLK (DFFX1_RVT)                         0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.02      9.78
+  data required time                                         9.78
+  ------------------------------------------------------------------------
+  data required time                                         9.78
+  data arrival time                                         -2.21
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.57
+
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: y_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 r
+  rst (in)                                         0.00      2.00 r
+  U22/A (INVX0_RVT)                                0.00      2.00 r
+  U22/Y (INVX0_RVT)                                0.03      2.03 f
+  U29/A3 (AND4X1_RVT)                              0.00      2.03 f
+  U29/Y (AND4X1_RVT)                               0.06      2.09 f
+  copt_h_inst_691/A (DELLN1X2_RVT)                 0.00      2.09 f
+  copt_h_inst_691/Y (DELLN1X2_RVT)                 0.12      2.21 f
+  y_reg[5]/D (DFFX1_RVT)                           0.00      2.21 f
+  data arrival time                                          2.21
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  y_reg[5]/CLK (DFFX1_RVT)                         0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.02      9.78
+  data required time                                         9.78
+  ------------------------------------------------------------------------
+  data required time                                         9.78
+  data arrival time                                         -2.21
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.57
+
+
+
+  Startpoint: y_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y[1] (output port clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  y_reg[1]/CLK (DFFX1_RVT)                         0.00      0.00 r
+  y_reg[1]/Q (DFFX1_RVT)                           0.08      0.08 f
+  y[1] (out)                                       0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.72
+
+
+
+  Startpoint: y_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y[3] (output port clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  y_reg[3]/CLK (DFFX1_RVT)                         0.00      0.00 r
+  y_reg[3]/Q (DFFX1_RVT)                           0.08      0.08 f
+  y[3] (out)                                       0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.72
+
+
+
+  Startpoint: y_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y[6] (output port clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  y_reg[6]/CLK (DFFX1_RVT)                         0.00      0.00 r
+  y_reg[6]/Q (DFFX1_RVT)                           0.08      0.08 f
+  y[6] (out)                                       0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.72
+
+
+
+  Startpoint: y_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y[0] (output port clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  y_reg[0]/CLK (DFFX1_RVT)                         0.00      0.00 r
+  y_reg[0]/Q (DFFX1_RVT)                           0.08      0.08 f
+  y[0] (out)                                       0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.72
+
+
+
+  Startpoint: y_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y[7] (output port clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  y_reg[7]/CLK (DFFX1_RVT)                         0.00      0.00 r
+  y_reg[7]/Q (DFFX1_RVT)                           0.08      0.08 f
+  y[7] (out)                                       0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.72
+
+
+
+  Startpoint: y_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y[2] (output port clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  y_reg[2]/CLK (DFFX1_RVT)                         0.00      0.00 r
+  y_reg[2]/Q (DFFX1_RVT)                           0.08      0.08 f
+  y[2] (out)                                       0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.72
+
+
+
+  Startpoint: y_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y[4] (output port clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  y_reg[4]/CLK (DFFX1_RVT)                         0.00      0.00 r
+  y_reg[4]/Q (DFFX1_RVT)                           0.07      0.07 f
+  y[4] (out)                                       0.00      0.07 f
+  data arrival time                                          0.07
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                         -0.07
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.73
+
+
+
+  Startpoint: y_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y[5] (output port clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  y_reg[5]/CLK (DFFX1_RVT)                         0.00      0.00 r
+  y_reg[5]/Q (DFFX1_RVT)                           0.07      0.07 f
+  y[5] (out)                                       0.00      0.07 f
+  data arrival time                                          0.07
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                         -0.07
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.73
+
+
+
+  Startpoint: x[2] (input port clocked by clk)
+  Endpoint: x_reg_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             2.00      2.00 r
+  x[2] (in)                                        0.00      2.00 r
+  x_reg_reg[2]/RSTB (DFFSSRX1_RVT)                 0.00      2.00 r
+  data arrival time                                          2.00
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  x_reg_reg[2]/CLK (DFFSSRX1_RVT)                  0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -0.05      9.75
+  data required time                                         9.75
+  ------------------------------------------------------------------------
+  data required time                                         9.75
+  data arrival time                                         -2.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.75
+
+
+1
