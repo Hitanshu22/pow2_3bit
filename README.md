@@ -16,6 +16,7 @@ This project demonstrates a complete **ASIC design flow** for a **3-bit to 2^X l
 ---
 
 ## Functional Description
+```
 verilog
 case (X)
 3'd0: Y = 1;
@@ -27,7 +28,7 @@ case (X)
 3'd6: Y = 64;
 3'd7: Y = 128;
 endcase
-
+```
 
 ---
 
@@ -44,7 +45,7 @@ $RTL_DIR/pow2_3bit.v
 ]
 
 compile_ultra
-
+```
 ---
 
 ### Gates Used (dc_script.tcl): -
@@ -58,14 +59,14 @@ compile_ultra
 set_dont_use [get_lib_cells /NOR]
 #set_dont_use [get_lib_cells /XNOR]
 #set_dont_use [get_lib_cells /MUX]
-
+```
 ---
 
 ### Library changes in "common_setup.tcl": -
 ```
 set target_library "../ref/lib/stdcell_rvt/saed32rvt_ss0p7vn40c.db"
 set link_library "* ../ref/lib/stdcell_rvt/saed32rvt_ss0p7vn40c.db ../ref/lib/stdcell_rvt/saed32rvt_ff1p16v125c.db"
-
+```
 ---
 
 ### Changes in CONSTRAINTS (pow2_3bit.sdc): -
@@ -77,7 +78,7 @@ set_clock_transition 0.1 [get_clocks clk]
 
 set_input_delay 2.0 -clock clk [all_inputs]
 set_output_delay 2.0 -clock clk [all_outputs]
-
+```
 ---
 
 ### Changes in path of (routing.tcl): -
@@ -86,7 +87,7 @@ write -format verilog -hierarchy
 -output ./outputs/pow2_3bit_netlist.v
 
 write_sdc ./outputs/pow2_3bit.sdc
-
+```
 ---
 
 ### Changes in path of Prime Time (STA): -
@@ -95,7 +96,7 @@ set link_path "../ref/lib/stdcell_rvt/saed32rvt_ff1p16v125c.db"
 read_verilog "../ICCII/outputs/pow2_3bit.routed.v"
 read_sdc "../ICCII/outputs/pow2_3bit_final.sdc"
 read_parasitics "../ICCII/outputs/pow2_3bit_func::nom.spef.p1_125.spef"
-
+```
 
 ---
 
@@ -139,7 +140,7 @@ pow2_3bit/
 └── docs/
     └── RTL_to_GDS_Report.pdf
 
-
+```
 ---
 
 ## 🧠 Key Learnings
