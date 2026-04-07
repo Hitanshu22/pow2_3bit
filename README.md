@@ -16,7 +16,7 @@ This project demonstrates a complete **ASIC design flow** for a **3-bit to 2^X l
 ---
 
 ## Functional Description
-```verilog
+verilog
 case (X)
 3'd0: Y = 1;
 3'd1: Y = 2;
