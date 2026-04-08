@@ -120,24 +120,53 @@ pow2_3bit/
 │   ├── pow2_3bit.v
 │   └── pow2_3bit_tb.v
 │
-├── constraints/
+├── Constraints/
 │   └── pow2_3bit.sdc
 │
 ├── synthesis/
 │   └── dc_script.tcl
 │
 ├── physical_design/
-│   ├── floorplan.tcl
-│   ├── powerplan.tcl
-│   ├── routing.tcl
+│   ├── 01_setup.tcl
+│   ├── 02_netlist_read.tcl
+│   ├── 03_floorplan.tcl
+│   ├── 04_powerplanning.tcl
+│   ├── 05_placement.tcl
+│   ├── 06_clock.tcl
+│   ├── 07_route.tcl
+│   └── 08_outputs.tcl
 │
-├── results/
-│   ├── schematics/
-│   ├── timing_reports/
-│   ├── area_power_reports/
-│   └── layout_images/
+├── Outputs/
+│   ├── synthesis_result.jpeg
+│   ├── floorplan.jpeg
+│   ├── Powerplanning_&_placement.jpeg
+│   ├── Routing.jpg
+│   ├── verdi_block_diagram.jpeg
+│   ├── verdi_gate_level_schematic.jpeg
+│   └── verdi_timing_waveform.jpeg
 │
-└── docs/
+├── PD_reports/
+│   ├── check_design_pre_place.rpt
+│   ├── check_legality.rpt
+│   ├── check_pin_placement.rpt
+│   ├── check_routes.rpt
+│   ├── clock.rpt
+│   ├── clock_gating.rpt
+│   ├── clock_final.rpt
+│   ├── clock_settings.rpt
+│   ├── congestion.rpt
+│   ├── pg_connectivity.rpt
+│   ├── power_final.rpt
+│   ├── qor_final.rpt
+│   ├── qor_post_place.rpt
+│   ├── timing_final_setup.rpt
+│   ├── timing_final_hold.rpt
+│   ├── timing_hold_post_route.rpt
+│   ├── timing_post_cts.rpt
+│   ├── timing_post_place.rpt
+│   └── timing_post_route.rpt
+│
+└── Report_file/
     └── RTL_to_GDS_Report.pdf
 
 ```
